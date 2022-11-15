@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "239001933849",
+    "project_id": "personal-shopping-d5024",
+    "storage_bucket": "personal-shopping-d5024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239001933849:android:04dfab8dc147c3ceba3288",
+        "android_client_info": {
+          "package_name": "com.personalshopping"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239001933849-88jd581dk11l96n4hqvgcksnb72kbja8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.personalshopping",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "239001933849-a540jasnng8pf2msm210m0u4sk6hrg2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf0zJOpV2ULgKGPnyyobYcvFUQNnAidKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239001933849-a540jasnng8pf2msm210m0u4sk6hrg2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
