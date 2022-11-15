@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "personal-shopping",
+    "slug": "personal-shopping",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
