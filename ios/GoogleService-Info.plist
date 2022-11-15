@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>239001933849-3b005bn93a2udve7n31rg9r7aj5knutn.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.239001933849-3b005bn93a2udve7n31rg9r7aj5knutn</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>239001933849-88jd581dk11l96n4hqvgcksnb72kbja8.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB67-B6bM1XUFjsQxE0SDy61NPFo5ynXK4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>239001933849</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.name.personalshopping</string>
+	<key>PROJECT_ID</key>
+	<string>personal-shopping-d5024</string>
+	<key>STORAGE_BUCKET</key>
+	<string>personal-shopping-d5024.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:239001933849:ios:310bbbfda7bc853aba3288</string>
+</dict>
+</plist>
