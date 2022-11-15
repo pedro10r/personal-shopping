@@ -19,5 +19,5 @@ export const Title = styled.Text`
   font-size: 24px;
   color: ${({ theme }) => theme.COLORS.WHITE};
   font-Family: ${({ theme }) => theme.FONTS.MEDIUM};
-  margin-top: ${getStatusBarHeight()}px;
+  margin-top: ${getStatusBarHeight() + 15}px;
 `;
