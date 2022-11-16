@@ -637,6 +637,9 @@ PODS:
     - React-Core (= 0.70.5)
     - React-jsi (= 0.70.5)
     - ReactCommon/turbomodule/core (= 0.70.5)
+  - Firebase/Auth (10.1.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 10.1.0)
   - Firebase/CoreOnly (10.1.0):
     - FirebaseCore (= 10.1.0)
   - Firebase/Firestore (10.1.0):
@@ -646,6 +649,11 @@ PODS:
     - Firebase/CoreOnly
     - FirebaseStorage (~> 10.1.0)
   - FirebaseAppCheckInterop (10.2.0)
+  - FirebaseAuth (10.1.0):
+    - FirebaseCore (~> 10.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 7.8)
+    - GoogleUtilities/Environment (~> 7.8)
+    - GTMSessionFetcher/Core (~> 2.1)
   - FirebaseAuthInterop (10.2.0)
   - FirebaseCore (10.1.0):
     - FirebaseCoreInternal (~> 10.0)
@@ -676,11 +684,21 @@ PODS:
     - GTMSessionFetcher/Core (~> 2.1)
   - fmt (6.2.1)
   - glog (0.3.5)
+  - GoogleUtilities/AppDelegateSwizzler (7.10.0):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
   - GoogleUtilities/Environment (7.10.0):
     - PromisesObjC (< 3.0, >= 1.2)
   - GoogleUtilities/Logger (7.10.0):
     - GoogleUtilities/Environment
+  - GoogleUtilities/Network (7.10.0):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
   - "GoogleUtilities/NSData+zlib (7.10.0)"
+  - GoogleUtilities/Reachability (7.10.0):
+    - GoogleUtilities/Logger
   - "gRPC-C++ (1.44.0)":
     - "gRPC-C++/Implementation (= 1.44.0)"
     - "gRPC-C++/Interface (= 1.44.0)"
@@ -1030,6 +1048,10 @@ PODS:
   - RNFBApp (16.4.4):
     - Firebase/CoreOnly (= 10.1.0)
     - React-Core
+  - RNFBAuth (16.4.4):
+    - Firebase/Auth (= 10.1.0)
+    - React-Core
+    - RNFBApp
   - RNFBFirestore (16.4.4):
     - Firebase/Firestore (= 10.1.0)
     - nanopb (< 2.30910.0, >= 2.30908.0)
@@ -1119,6 +1141,7 @@ DEPENDENCIES:
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
+  - "RNFBAuth (from `../node_modules/@react-native-firebase/auth`)"
   - "RNFBFirestore (from `../node_modules/@react-native-firebase/firestore`)"
   - "RNFBStorage (from `../node_modules/@react-native-firebase/storage`)"
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
@@ -1132,6 +1155,7 @@ SPEC REPOS:
     - BoringSSL-GRPC
     - Firebase
     - FirebaseAppCheckInterop
+    - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
     - FirebaseCoreExtension
@@ -1237,6 +1261,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon"
   RNFBApp:
     :path: "../node_modules/@react-native-firebase/app"
+  RNFBAuth:
+    :path: "../node_modules/@react-native-firebase/auth"
   RNFBFirestore:
     :path: "../node_modules/@react-native-firebase/firestore"
   RNFBStorage:
@@ -1270,6 +1296,7 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: fe8b5f1429cfe83a8d72dc8ed61dc7704cac8745
   Firebase: 444b35a9c568a516666213c2f6cccd10cb12559f
   FirebaseAppCheckInterop: af164d9c623f82174e3ffa54394dee189587c601
+  FirebaseAuth: 19a85b8a42e7c1104a2ffa6987c748daa79a5e64
   FirebaseAuthInterop: 027d42ca8fec84dc6151566479af05095a0bd5c0
   FirebaseCore: 55e7ae35991ccca4db03ff8d8df6ed5f17a3e4c7
   FirebaseCoreExtension: 69b966c399abc4ca6dc75006ab87160f81512725
@@ -1314,6 +1341,7 @@ SPEC CHECKSUMS:
   React-runtimeexecutor: 7401c4a40f8728fd89df4a56104541b760876117
   ReactCommon: c9246996e73bf75a2c6c3ff15f1e16707cdc2da9
   RNFBApp: 18468d88f518831e4d34a77e1c076a80e40929a2
+  RNFBAuth: f68c1dbe70bdce33b7bdac9d1bad89753b4e7bd0
   RNFBFirestore: 66f7db7673c68ecfeacef9ae203f647f2840ae18
   RNFBStorage: 3fa7f2ef6fc5221f38a8777a1f375f3f1a3805d8
   RNGestureHandler: 62232ba8f562f7dea5ba1b3383494eb5bf97a4d3
