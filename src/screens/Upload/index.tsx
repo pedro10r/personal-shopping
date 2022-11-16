@@ -32,7 +32,8 @@ export function Upload() {
 
   function handleUpload() {
     const fileName = new Date().getTime();
-    const reference = storage().ref(`/images/${fileName}.png`);
+    const MIME = image.match(/\.(?:.(?!\.))+$/);
+    const reference = storage().ref(`/images/${fileName}${MIME}`);
 
     const uploadTask = reference.putFile(image);
 
@@ -52,7 +53,7 @@ export function Upload() {
 
   return (
     <Container>
-      <Header title="Lista de compras" />
+      <Header title="Upload de Fotos" />
 
       <Content>
         <Photo uri={image} onPress={handlePickImage} />
