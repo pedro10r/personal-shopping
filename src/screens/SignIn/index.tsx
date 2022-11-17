@@ -11,11 +11,11 @@ export function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  async function handleSignInAnonymously() {
-    const { user } = await auth().signInAnonymously();
+  // async function handleSignInAnonymously() {
+  //   const { user } = await auth().signInAnonymously();
 
-    console.log(user);
-  }
+  //   console.log(user);
+  // }
 
   function handleCreateUserAccount() {
     auth()
@@ -38,7 +38,7 @@ export function SignIn() {
   function handleSignInWithEmailAndPassword() {
     auth()
       .signInWithEmailAndPassword(email, password)
-      .then(({ user }) => console.log(user))
+      .then(() => console.log('SignIn Success'))
       .catch(error => {
         switch (error.code) {
           case 'auth/user-not-found' || 'auth/wrong-password':
